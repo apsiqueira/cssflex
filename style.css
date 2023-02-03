@@ -1,0 +1,176 @@
+*{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  
+
+}
+body{
+  background-color: black;
+  color: white;
+}
+#header{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 0.5px solid white;
+}
+.logo{
+  position: relative;
+}
+.logo-img{
+  height: 50px;
+  width:50px;
+  border: 1px white solid;
+  border-radius: 40%;
+  padding: 20px;
+}
+
+.ul-nav{
+  display: flex;
+  column-gap:8px;
+  
+}
+.nav-iten{
+
+  line-height: 40px;
+
+
+ 
+}
+.nav-iten:hover{
+  background-color: #aaa;
+  color: black;
+  border-radius: 5px;
+
+
+}
+.iten-link{
+  padding: 6px 8px;
+  cursor: pointer;
+}
+ button{
+  padding: 12px 30px;
+  margin-bottom: 4px;
+  border-radius: 4px;
+  font-size: 1rem;
+  /* display: none; */
+  
+
+}
+
+
+
+.fluid{
+  max-width: 1600px;
+  display: flex;
+  
+
+}
+.container-flex{
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0px 8px;
+  
+}
+h1{
+  display: block;
+  line-height: 100px;
+  margin-bottom: 10px;
+}
+.imagens-flex{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+
+}
+.imagens-flex img{
+  max-width: 46%;
+
+
+}
+footer{
+
+  max-width: 960px;
+  height: 100px;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+ 
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+.menu-mobile{
+  display: none;
+}
+@media  (max-width:520px){
+  #header{
+  
+    flex-direction: column;
+
+  }
+  .fluid-header{
+  margin-top: 40px;
+
+  }
+  footer{
+    font-size: 8px;
+  }
+  button{
+    display: inline-block;
+  }
+  .menu-mobile{
+    position: relative;
+    display: flex;
+  
+  }
+  .ul-nav{
+    display: none;
+  }
+
+
+  
+  .menu{
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: calc(100% + 10px); 
+    left: 50%; 
+    transform: translateX(-50%); 
+    background-color: white;
+    border-radius: 4px;
+  
+  }
+  .menu a{
+    display: flex;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    width: 100%;
+    justify-content: center;
+
+  }
+  .menu a:hover{
+    background-color: #aaa;
+    color: black;
+    border-radius: 5px;
+  }
+
+}
+
+
+
